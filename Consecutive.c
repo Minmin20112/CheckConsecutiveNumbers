@@ -85,7 +85,7 @@ Welcome to GDB Online.
 // }
 
 
-#inculde <stdio.h>
+#include <stdio.h>
 
 void sortArr(int n, long arr[])
 {
@@ -94,17 +94,18 @@ void sortArr(int n, long arr[])
     {
         for(int j=i+1;j<n;j++)
         {
-            if(a[i]>a[j])
+            if(arr[i]>arr[j])
             {
-            temp=a[i];
-            a[i]=a[j];
-            a[j]=temp;
+            temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
             }
         }
     }
 }
-void steppingNos(int l, in r)
+void steppingNos(int l, int r)
 {
+    int count;
     int arr[100];
     for(int i=0;i<9;i++)
     {
